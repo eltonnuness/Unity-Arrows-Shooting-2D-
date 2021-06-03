@@ -34,7 +34,7 @@ public class Bowlogic : MonoBehaviour {
 
 
         //create a quaternion to express the rotation that we want 
-        Quaternion rot = Quaternion.AngleAxis(angle - 180f, Vector3.forward);
+        Quaternion rot = Quaternion.AngleAxis(angle - 180f, Vector3.down);
 
         //feeding the rotation that we created to our Bow
         transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime * RotSpeed);
